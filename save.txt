@@ -25,7 +25,10 @@ def prog4(n:Int):Unit = {
     println("n mniejsze od 0")
   )else if (n==0) then (
     println("n równe 0")
-  )else (
-    println("n większe od 0") 
-  )
+  )else {
+    println("n większe od 0")
+    if (n>liczba) then {
+      println(s"$n jest większy niż $liczba")
+    } 
+  }
 }
