@@ -21,6 +21,11 @@ def prog4(n:Int):Unit = {
   val rand = scala.util.Random()
   val liczba = rand.nextInt(100)
   println(s"Wylosowana liczba to $liczba")
-  val check = if n>liczba then "większa" else "mniejsza"
-  println(s"$n jest $check od wylosowanej liczby")
+  if (n<0) then (
+    println("n mniejsze od 0")
+  )else if (n==0) then (
+    println("n równe 0")
+  )else (
+    println("n większe od 0") 
+  )
 }
